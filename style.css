@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
+  font-family: "Overpass", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: hsl(216, 12%, 8%);
+}
+.rating-form {
+  width: 420px;
+  height: 400px;
+  background-color: #1d242e;
+  border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.star-container {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #262f38;
+}
+.star-container img {
+  width: 16px;
+}
+.rating-form h1 {
+  font-size: 30px;
+  padding: 30px 0 10px 0;
+  font-weight: 400;
+}
+.rating-form p {
+  height: auto;
+  opacity: 0.5;
+  word-spacing: 2px;
+}
+.rating-count {
+  margin: 30px 0;
+  display: flex;
+  gap: 5;
+  justify-content: space-between;
+}
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  border-radius: 50%;
+  background-color: #262f38;
+  cursor: pointer;
+}
+.count_hover:hover {
+  background-color: hsl(217, 12%, 63%);
+  opacity: 1;
+  transition: 0.3s ease-in;
+}
+
+.count_clicked {
+  background-color: #fa7312;
+}
+.num {
+  opacity: 1;
+}
+.rating-form .submitted {
+  color: white;
+  background-color: #fa7312;
+  font-size: 16px;
+  border: 0;
+  height: 50px;
+  border-radius: 25px;
+}
+.rating-form button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+  transition: 0.3s ease-in;
+}
+
+/* Thank-you Section */
+
+.hidden {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.thank-you {
+  width: 420px;
+  height: 400px;
+  background-color: #1d242e;
+  border-radius: 25px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.thank-you img {
+  width: 180px;
+}
+.rating {
+  color: #fa7312;
+  background-color: #262f38;
+  margin: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  opacity: 0.7;
+}
+.thank-you h1 {
+  font-size: 30px;
+  padding: 20px 0 10px 0;
+  font-weight: 400;
+}
+.thank-you p {
+  word-spacing: 1px;
+  text-align: center;
+  opacity: 0.5;
+}
+@media screen and (max-width: 430px) {
+  .rating-form {
+    width: 90%;
+    height: 400px;
+    padding: 25px;
+  }
+  .thank-you {
+    width: 90%;
+    height: 400px;
+    padding: 25px;
+  }
+}
