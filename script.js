@@ -25,7 +25,11 @@ for (let element of roundButtons) {
 
 function submitHandler(e) {
   e.preventDefault();
-  form.style.display = "none";
-  thankYou.style.display = "flex";
+  if (rated.innerHTML !== "") {
+    form.style.display = "none";
+    thankYou.style.display = "flex";
+  } else {
+    alert("Please select a rating");
+  }
 }
 submit.addEventListener("click", submitHandler);
